@@ -51,21 +51,53 @@ public class Hero {
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
         }
     }
-    //setter method
+    /**
+     * setter method
+     * @param name
+     * @param not{@code null}
+     */
     public void setName(String name){this.name = name;}
+    /**
+     * setter method
+     * @param hitPoint
+     * @param not{@code null}
+     */
     public void setHitPoint(int hitPoint){this.hitPoint = hitPoint;}
+    /**
+     * setter method
+     * @param attack
+     */
     public void setAttack(int attack){this.attack = attack;}
+    /**
+     * setter method
+     * @param dead
+     */
     public void setDead(boolean dead){this.dead = dead;}
-    //getter method
+    /**
+     * getter method
+     * @return String
+     */
     public String getName(){
         return this.name; 
     }
+    /**
+     * getter method
+     * @return boolean
+     */
     public boolean getDead(){
         return this.dead; 
     }
+    /**
+     * getter method
+     * @return int
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
+    /**
+     * getterrmethod
+     * @return int
+     */
     public int getAttack(){
         return this.attack;
     }
