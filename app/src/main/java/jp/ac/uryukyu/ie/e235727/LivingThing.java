@@ -15,7 +15,7 @@ public class LivingThing {
     }
     public void attack(LivingThing opponent){
         if( this.hitPoint > 0 ){
-            int damage = (int)(Math.random() * attack);
+            int damage = (int)(Math.random() * this.attack);
             System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, opponent.getName(), damage);
             opponent.wounded(damage);
         }else{
@@ -74,5 +74,14 @@ public class LivingThing {
     public int getHitPoint(){
         return this.hitPoint;
     }
+    /**
+     * getter method
+     * @return int
+     */
+    public int getAttack(){
+        return this.attack;
+    }
+
+
     
 }
